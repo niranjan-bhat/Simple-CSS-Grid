@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Time tracking dashboard</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="profile-card">
+          <div class="profile-content">
+            <img
+              class="profile-image"
+              src="images\image-jeremy.png"
+              alt="error"
+            />
+            <div class="profile-details">
+              <h4 class="profile-report">Report for</h4>
+              <h3 class="profile-name">Jeremy Robson</h3>
+            </div>
+          </div>
+          <div class="report-options">
+            <div class="option-daily active">Daily</div>
+            <div class="option-weekly">Weekly</div>
+            <div class="option-monthly">Monthly</div>
+          </div>
+        </div>
+        <div class="card work-card">
+          <img class="card-icon" src="images\icon-work.svg" alt="error" />
+          <div class="card-content">
+            <div class="title-section">
+              <span class="title"> Work </span>
+              <img src="images\icon-ellipsis.svg" alt="error" />
+            </div>
+            <div class="time-container">
+              <div class="current-time-container">
+                <span class="time-spent-on-work" id="currentWork"></span
+                ><span>hrs</span>
+              </div>
+              <span class="old-time-spent" id="prevWork"></span>
+            </div>
+          </div>
+        </div>
+        <div class="card play-card">
+          <img class="card-icon" src="images\icon-play.svg" alt="error" />
+          <div class="card-content">
+            <div class="title-section">
+              <span class="title"> Play </span
+              ><img src="images\icon-ellipsis.svg" alt="error" />
+            </div>
+            <div class="time-container">
+              <div class="current-time-container">
+                <span class="time-spent-on-play" id="currentPlay"></span
+                ><span>hrs</span>
+              </div>
+              <span class="old-time-spent" id="prevPlay"></span>
+            </div>
+          </div>
+        </div>
+        <div class="card study-card">
+          <img class="card-icon" src="images\icon-study.svg" alt="error" />
+          <div class="card-content">
+            <div class="title-section">
+              <span class="title"> Study </span
+              ><img src="images\icon-ellipsis.svg" alt="error" />
+            </div>
+            <div class="time-container">
+              <div class="current-time-container">
+                <span class="time-spent-on-study" id="currentStudy"></span
+                ><span>hrs</span>
+              </div>
+              <span class="old-time-spent" id="prevStudy"></span>
+            </div>
+          </div>
+        </div>
+        <div class="card exercise-card">
+          <img class="card-icon" src="images\icon-exercise.svg" alt="error" />
+          <div class="card-content">
+            <div class="title-section">
+              <span class="title"> Exercise </span
+              ><img src="images\icon-ellipsis.svg" alt="error" />
+            </div>
+            <div class="time-container">
+              <div class="current-time-container">
+                <span class="time-spent-on-exercise" id="currentExercise"></span
+                ><span>hrs</span>
+              </div>
+              <span class="old-time-spent" id="prevExercise"></span>
+            </div>
+          </div>
+        </div>
+        <div class="card social-card">
+          <img class="card-icon" src="images\icon-social.svg" alt="error" />
+          <div class="card-content">
+            <div class="title-section">
+              <span class="title"> Social </span
+              ><img src="images\icon-ellipsis.svg" alt="error" />
+            </div>
+            <div class="time-container">
+              <div class="current-time-container">
+                <span class="time-spent-on-social" id="currentSocial"></span
+                ><span>hrs</span>
+              </div>
+              <span class="old-time-spent" id="prevSocial"></span>
+            </div>
+          </div>
+        </div>
+        <div class="card selfcare-card">
+          <img class="card-icon" src="images\icon-self-care.svg" alt="error" />
+          <div class="card-content">
+            <div class="title-section">
+              <span class="title"> Self Care </span
+              ><img src="images\icon-ellipsis.svg" alt="error" />
+            </div>
+            <div class="time-container">
+              <div class="current-time-container">
+                <span class="time-spent-on-selfcare" id="currentSelfcare"></span
+                ><span>hrs</span>
+              </div>
+              <span class="old-time-spent" id="prevSelfcare"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
